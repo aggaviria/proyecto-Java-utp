@@ -26,10 +26,8 @@ public class ReportesView {
             try {
                 ResultSet rs = ProyectoBancoDao.consulta(banco);
 
-                /**********g*********/
                 ProyectoBancoVo.valores(banco);
-                //stmt.close();
-                //conn.close();
+
             } catch (Exception e) {
                 System.out.println(e);
             }
